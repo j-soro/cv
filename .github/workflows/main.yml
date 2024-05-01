@@ -21,9 +21,20 @@ jobs:
       with:
         working_directory: ./
         root_file: main.tex
+        
     - name: Rename PDF file
       run: mv ./main.pdf ./joaquin-soro-cv.pdf 
 
+    - name: Tag the repository
+      id: tag
+      run: |
+        # See https://docs.github.com/en/get-started/using-git/dealing-with-special-characters-in-branch-and-tag-names
+        TAG=v$(date -Iseconds | sed 's/[T:\+]/-/g')
+        echo "$TAG"
+        echo "tag=$TAG" >> $GITHUB_OUTPUT
+        git tag -a $TAG -m "Published version $TAG" ${GITHUB_SHA}
+        git push origin $TAG
+        
     - name: Release
       uses: softprops/action-gh-release@v2.0.4
       with:
