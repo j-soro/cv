@@ -19,10 +19,16 @@ jobs:
       with:
         working_directory: ./
         root_file: main.tex
+
+    - name: Release
+      uses: softprops/action-gh-release@v2
+      if: startsWith(github.ref, 'refs/tags/')
         
     - name: Upload PDF file
       if: steps.compile_latex.outputs.built == 'true' 
       uses: actions/upload-artifact@v4
       with:
         name: PDF
-        path: joaquin-soro-cv.pdf
+        path: joaquin-soro-cv.pdf  
+      env:
+        TEXINPUTS: ".:.///:"
