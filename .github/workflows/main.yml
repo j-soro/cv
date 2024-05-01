@@ -25,16 +25,11 @@ jobs:
     - name: Rename PDF file
       run: mv ./main.pdf ./joaquin-soro-cv.pdf 
 
-    - name: Tag the repository
+    - name: Update latest release tag
       id: tag
-      run: |
-        TAG=latest
-        echo "$TAG"
-        echo "tag=$TAG" >> $GITHUB_OUTPUT
-        git config user.name "GitHub Action"
-        git config user.email "bloop@blorp.com"
-        git tag -a $TAG -m "Published version $TAG" ${GITHUB_SHA}
-        git push origin $TAG
+      uses: EndBug/latest-tag@latest
+      with:
+        ref: latest
         
     - name: Release
       uses: softprops/action-gh-release@v2.0.4
@@ -46,7 +41,7 @@ jobs:
         # Gives the release a custom name. Defaults to tag name
         # name: # optional
         # Gives a tag name. Defaults to github.GITHUB_REF
-        tag_name: ${{ steps.tag.outputs.tag }}
+        tag_name: latest
         # Creates a draft release. Defaults to false
         # draft: # optional
         # Identify the release as a prerelease. Defaults to false
