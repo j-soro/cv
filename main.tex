@@ -1,0 +1,216 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.5 (01/05/24)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+% Modified for personal use by Joaquín (contact@jsoro.dev)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{white}{{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Joaquín}}}}} % First name
+	
+	\colorbox{white}{{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Soro}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Software Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Linkedin}{12}{\href{https://linkedin.com/in/jsoro}{jsoro (Linkedin)}}\\
+	\icon{Globe}{12}{\href{https://jsoro.dev}{jsoro.dev (Website)}}\\
+	\icon{Github}{12}{\href{https://github.com/j-soro}{github.com/j-soro}}\\
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{At}{12}{\href{mailto:contact@jsoro.dev}{contact@jsoro.dev}}\\	
+	\icon{Phone}{12}{+34 680 601 004}\\
+	\icon{MapMarker}{12}{Spain}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+
+\begin{minipage}[t]{1\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+		\begin{itemize}
+			\item I am \textbf{proactive \& passionate} with a \textbf{creative mindset} and a \textbf{resolutive attitude}.
+			\item I \textbf{own my work} and love putting all my effort and care in what I do.
+			\item I work \textbf{within a great team}, driven by \textbf{shared passion}, collaboration and \textbf{lifelong curiosity}.
+			\item I am \textbf{fluent in English (C1)} and \textbf{native in Spanish}, confident in conveying complex ideas.
+			\item Some hobbies: Nix, making music, D\&D, videogames, animals, nature/hiking, reading, cooking.
+		\end{itemize}
+% Dummy text
+\end{minipage}
+\hfill % Whitespace between
+% \begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+% 	\begin{barchart}{5.5}
+% 		\baritem{Data Engineering}{75}
+% 		\baritem{Backend}{90}
+% 		\baritem{Frontend}{50}
+% 		\baritem{Cloud development}{70}
+% 		\baritem{AI/ML}{65}
+% 	\end{barchart}
+% \end{minipage}
+
+% \begin{center}
+% 	\bubbles{5/Python, 4/ELK, 3/TS, 3/Cloud, 3/Linux, 3/Go}
+% \end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience (older to newer)}
+
+\begin{entrylist}
+	\entry
+		{03/22 -- 06/22\\\footnotesize{full time}}
+		{Junior Software Engineer Internship - (AI SEO Startup, SaaS)}
+		{Smartbrand (sb.digital)}
+		{Cooperated with team in delivering and testing features. Studied the project design and codebase. Generated reports and assessments to support development. \\ 
+		\texttt{Python}\slashsep\texttt{Java}\slashsep\texttt{RabbitMQ}\slashsep\texttt{Git}\slashsep\texttt{Docker}\slashsep\texttt{Linux}\slashsep\texttt{MongoDB}\slashsep\texttt{Kubernetes}}
+	\entry
+		{07/22 -- 12/22\\\footnotesize{full time}}
+		{Junior Python Engineer - (AI SEO Startup, SaaS)}
+		{Smartbrand (sb.digital)}
+		{Developed features and participated in building a SaaS AI platform. The solution leveraged a complex, microservice-based architecture deployed in GCP. My roles involved the transition towards a Cloud-native, distributed, scalable, workflow-based rework parting from the initial MVP.\\
+		\texttt{Python}\slashsep\texttt{Kafka}\slashsep\texttt{Redis}\slashsep\texttt{ELK}
+		\slashsep\texttt{Kubernetes}\slashsep\texttt{Helm}\slashsep\texttt{GCP}\slashsep\texttt{MongoDB}}
+	\entry
+		{12/22 -- 06/23\\\footnotesize{remote, full time}}
+		{Data Engineer (ELK) / Python Engineer (Banking Domain)}
+		{Accenture (w. CaixaBank Tech)}
+		{
+			Engineered and improved an in-house complex data processing application.
+			The processes involved different ingests and exports towards other outputs,
+			dashboards, visualizations and documents.
+			Microservice-based architecture which comprised data processing job
+			definitions and scheduling.\\
+		\texttt{Python}\slashsep\texttt{Elasticsearch}\slashsep\texttt{Kibana}
+		\slashsep\texttt{Docker}\slashsep\texttt{Kubernetes}\slashsep\texttt{Consulting}}
+	\entry
+		{06/23 -- 03/24\\\footnotesize{remote, full time}}
+		{Data Engineer / Python \& Scala Engineer (Airlines domain)}
+		{NEXT Digital (w. Iberia)}
+		{
+			Engineered and developed solutions using Scala, Spark, Kafka, ksqlDB in the AWS cloud stack.
+			Migrated legacy processes and infrastructure towards Kafka stack. Designed and developed API services
+			working with hexagonal architecture \& SOLID principles. Formed part of the operations/realtime data
+			engineering platform for International Airlines Group. 
+			\\
+		\texttt{Kafka}\slashsep\texttt{ksqlDB}\slashsep\texttt{Airflow}\slashsep\texttt{PostgreSQL}\slashsep\texttt{Python}\slashsep\texttt{Scala}\slashsep\texttt{Docker}\slashsep\texttt{Kubernetes}}
+	\entry
+		{03/24 -- Current\\\footnotesize{remote, full time}}
+		{Data Engineer / Go Software Engineer (Payments domain)}
+		{Epos Now}
+		{
+			Contributed to the design, development and maintenance of a complex data platform.
+			Engineered pipelines for report generation, monitoring and integrations. Engineered and developed new Go processes and refactored legacy C\# services.
+			Led the adoption of an ETL orchestration platform using Airflow and refactored legacy pipelines into a modern stack.
+			\\
+		\texttt{Go}\slashsep\texttt{C\#}\slashsep\texttt{PostgreSQL}\slashsep\texttt{Kafka}\slashsep\texttt{Airflow}
+		\slashsep\texttt{Docker}\slashsep\texttt{Kubernetes}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education (newer to older)}
+
+\begin{entrylist}
+	\entry
+		{2022 -- Current}
+		{Bachelor's Degree, Software Engineering}
+		{Universitat Oberta de Catalunya (https://uoc.edu)}
+		{Currently studying software engineering in my free time. Computing and AI branch.}
+	\entry
+		{2020 -- 2022\\\footnotesize{>2000h}}
+		{Higher Technical Expert in Application Development Degree}
+		{(https://iespoetapacomolla.es)}
+		{An in-depth higher degree of official professional education in backend development.}
+	\entry
+	{4/2022 -- 7/2023\\\footnotesize{>400h}}
+	{Web Design And Development Bootcamp: Vue3 + Pinia}
+	{Escuela de Organización Industrial (https://eoi.es)}
+	{A JS/TS web/UX development course. I lead my team in developing an MVP for an accesibility-centered social media application. Vue3 + Firebase}
+	\entry
+		{3/2021 -- 7/2021\\\footnotesize{>600h}}
+		{II Samsung Innovation Campus in AI, Deep Learning}
+		{Universidad de Málaga (https://uma.es)}
+		{A specialization course in Python, AI, Statistics and ML/DL. I built a Twitter emotion classifier web application for my final project. Featuring a LSTM deep learning model and dashboard reporting.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% \begin{minipage}[t]{0.3\textwidth}
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+% 	\cvsect{Languages}
+	
+% 	\textbf{Spanish} - native\\
+% 	\textbf{English} - fluent (C1)\\
+% \end{minipage}
+% \hfill
+% \begin{minipage}[t]{0.7\textwidth}
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+% 	% \cvsect{Hobbies}
+	
+	
+% \end{minipage}
+
+% \begin{minipage}[t]{0.7\textwidth}
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+% 	\cvsect{Non profit}
+	
+% 	I help... \lorem
+% \end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
