@@ -29,6 +29,6 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: PDF
-        path: joaquin-soro-cv.pdf  
+        path: main.pdf  
       env:
         TEXINPUTS: ".:.///:"
