@@ -36,9 +36,8 @@
 	
 	% If your name is very short, use just one of the lines below
 	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
-	\colorbox{white}{{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Joaquín}}}}} % First name
+	\colorbox{white}{{\huge\textcolor{black}{\textbf{\MakeUppercase{Joaquín Soro}}}}} % First name
 	
-	\colorbox{white}{{\huge\textcolor{black}{\textbf{\MakeUppercase{Soro Castelló}}}}} % Last name	
 	\vspace{6pt}
 	
 	{\huge Software Engineer} % Career or current job title
@@ -68,15 +67,14 @@
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
 %----------------------------------------------------------------------------------------
 
-
+\vspace{0.5cm}
 \begin{minipage}[t]{1\textwidth} % 40% of the page width for the introduction text
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 		\begin{itemize}
 			\item I am \textbf{proactive \& passionate} with a \textbf{creative mindset} and a \textbf{resolutive attitude}.
-			\item I \textbf{own my work} and love putting all my effort and care in what I do.
-			\item I work \textbf{within a great team}, driven by \textbf{shared passion}, collaboration and \textbf{lifelong curiosity}.
+			\item I \textbf{own my work} and love working \textbf{within a great team}, driven by \textbf{best practices}.
 			\item I am \textbf{fluent in English (C1)} and \textbf{native in Spanish}, confident in conveying complex ideas.
-			\item Some hobbies: Nix, making music, D\&D, videogames, animals, nature/hiking, reading, cooking.
+			% \item Some hobbies: Nix, making music, D\&D, videogames, animals, nature/hiking, reading, cooking.
 		\end{itemize}
 % Dummy text
 \end{minipage}
@@ -100,22 +98,33 @@
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\cvsect{Experience (older to newer)}
+\cvsect{Experience}
 
 \begin{entrylist}
 	\entry
-		{03/22 -- 06/22\\\footnotesize{full time}}
-		{Junior Software Engineer Internship - (AI SEO Startup, SaaS)}
-		{Smartbrand (sb.digital)}
-		{Cooperated with team in delivering and testing features. Studied the project design and codebase. Generated reports and assessments to support development. \\ 
-		\texttt{Python}\slashsep\texttt{Java}\slashsep\texttt{RabbitMQ}\slashsep\texttt{Git}\slashsep\texttt{Docker}\slashsep\texttt{Linux}\slashsep\texttt{MongoDB}\slashsep\texttt{Kubernetes}}
+		{03/24 -- Current\\\footnotesize{remote, full time}}
+		{Data Engineer / Go Software Engineer (Payments domain)}
+		{Epos Now}
+		{
+			Contributed to the design, development and maintenance of a complex data platform.
+			Engineered pipelines for report generation, monitoring and integrations. Engineered and developed new Go processes and refactored legacy C\# services.
+			Led the adoption and development of an ETL orchestration platform using Airflow and refactored legacy pipelines into a modern, unified stack.
+			\\
+		\texttt{Go}\slashsep\texttt{C\#}\slashsep\texttt{PostgreSQL}\slashsep\texttt{Kafka}\slashsep\texttt{Airflow}
+		\slashsep\texttt{Docker}\slashsep\texttt{Kubernetes}}
+	
 	\entry
-		{07/22 -- 12/22\\\footnotesize{full time}}
-		{Junior Python Engineer - (AI SEO Startup, SaaS)}
-		{Smartbrand (sb.digital)}
-		{Developed features and participated in building a SaaS AI platform. The solution leveraged a complex, microservice-based architecture deployed in GCP. My roles involved the transition towards a Cloud-native, distributed, scalable, workflow-based rework parting from the initial MVP.\\
-		\texttt{Python}\slashsep\texttt{Kafka}\slashsep\texttt{Redis}\slashsep\texttt{ELK}
-		\slashsep\texttt{Kubernetes}\slashsep\texttt{Helm}\slashsep\texttt{GCP}\slashsep\texttt{MongoDB}}
+		{06/23 -- 03/24\\\footnotesize{remote, full time}}
+		{Data Engineer / Python \& Scala Engineer (Airlines domain)}
+		{NEXT Digital (w. Iberia)}
+		{
+			Engineered and developed solutions using Scala, Spark, Kafka, ksqlDB in the AWS cloud stack.
+			Migrated legacy processes and infrastructure towards Kafka stack. Designed and developed API services
+			working with hexagonal architecture \& SOLID principles. Formed part of the operations/realtime data
+			engineering platform for International Airlines Group. 
+			\\
+		\texttt{Kafka}\slashsep\texttt{ksqlDB}\slashsep\texttt{Airflow}\slashsep\texttt{PostgreSQL}\slashsep\texttt{Python}\slashsep\texttt{Scala}\slashsep\texttt{Docker}\slashsep\texttt{Kubernetes}}
+	
 	\entry
 		{12/22 -- 06/23\\\footnotesize{remote, full time}}
 		{Data Engineer (ELK) / Python Engineer (Banking Domain)}
@@ -128,35 +137,28 @@
 			definitions and scheduling.\\
 		\texttt{Python}\slashsep\texttt{Elasticsearch}\slashsep\texttt{Kibana}
 		\slashsep\texttt{Docker}\slashsep\texttt{Kubernetes}\slashsep\texttt{Consulting}}
+	
 	\entry
-		{06/23 -- 03/24\\\footnotesize{remote, full time}}
-		{Data Engineer / Python \& Scala Engineer (Airlines domain)}
-		{NEXT Digital (w. Iberia)}
-		{
-			Engineered and developed solutions using Scala, Spark, Kafka, ksqlDB in the AWS cloud stack.
-			Migrated legacy processes and infrastructure towards Kafka stack. Designed and developed API services
-			working with hexagonal architecture \& SOLID principles. Formed part of the operations/realtime data
-			engineering platform for International Airlines Group. 
-			\\
-		\texttt{Kafka}\slashsep\texttt{ksqlDB}\slashsep\texttt{Airflow}\slashsep\texttt{PostgreSQL}\slashsep\texttt{Python}\slashsep\texttt{Scala}\slashsep\texttt{Docker}\slashsep\texttt{Kubernetes}}
+		{07/22 -- 12/22\\\footnotesize{full time}}
+		{Junior Python Engineer - (AI SEO Startup, SaaS)}
+		{Smartbrand (sb.digital)}
+		{Developed features and participated in building a SaaS AI platform. The solution leveraged a complex, microservice-based architecture deployed in GCP. My roles involved the transition towards a Cloud-native, distributed, scalable, workflow-based rework parting from the initial MVP.\\
+		\texttt{Python}\slashsep\texttt{Kafka}\slashsep\texttt{Redis}\slashsep\texttt{ELK}
+		\slashsep\texttt{Kubernetes}\slashsep\texttt{Helm}\slashsep\texttt{GCP}\slashsep\texttt{MongoDB}}
+	
 	\entry
-		{03/24 -- Current\\\footnotesize{remote, full time}}
-		{Data Engineer / Go Software Engineer (Payments domain)}
-		{Epos Now}
-		{
-			Contributed to the design, development and maintenance of a complex data platform.
-			Engineered pipelines for report generation, monitoring and integrations. Engineered and developed new Go processes and refactored legacy C\# services.
-			Led the adoption and development of an ETL orchestration platform using Airflow and refactored legacy pipelines into a modern, unified stack.
-			\\
-		\texttt{Go}\slashsep\texttt{C\#}\slashsep\texttt{PostgreSQL}\slashsep\texttt{Kafka}\slashsep\texttt{Airflow}
-		\slashsep\texttt{Docker}\slashsep\texttt{Kubernetes}}
+		{03/22 -- 06/22\\\footnotesize{full time}}
+		{Junior Software Engineer Internship - (AI SEO Startup, SaaS)}
+		{Smartbrand (sb.digital)}
+		{Cooperated with team in delivering and testing features. Studied the project design and codebase. Generated reports and assessments to support development. \\ 
+		\texttt{Python}\slashsep\texttt{Java}\slashsep\texttt{RabbitMQ}\slashsep\texttt{Git}\slashsep\texttt{Docker}\slashsep\texttt{Linux}\slashsep\texttt{MongoDB}\slashsep\texttt{Kubernetes}}
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 
-\cvsect{Education (newer to older)}
+\cvsect{Education}
 
 \begin{entrylist}
 	\entry
